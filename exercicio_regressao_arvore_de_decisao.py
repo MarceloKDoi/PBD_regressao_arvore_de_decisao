@@ -5,9 +5,8 @@ from sklearn.tree import DecisionTreeRegressor
 
 
 dataset = pd.read_csv('winequality-red.csv')
-print(dataset)
+# print(dataset)
 ind = dataset.iloc[:, 0:-1].values
-#ind = dataset.iloc[:, 10:-1].values
 dep = dataset.iloc[:, -1].values
 
 decisionTreeRegressor = DecisionTreeRegressor(random_state=0)
