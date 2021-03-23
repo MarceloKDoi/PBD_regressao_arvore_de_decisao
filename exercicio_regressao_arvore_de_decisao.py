@@ -15,7 +15,7 @@ decisionTreeRegressor.fit(ind, dep)
 # grafico 1
 
 print(ind)
-plt.scatter(ind[:, 0], decisionTreeRegressor.predict(ind), color="red")
+plt.scatter(ind[:, -2], decisionTreeRegressor.predict(ind), color="red")
 plt.xlabel('Alcohol')
 plt.ylabel('Quality')
 plt.title('Alcohol vs Quality')
